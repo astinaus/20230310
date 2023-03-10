@@ -13,9 +13,15 @@ li {
 img {
   vertical-align: top;
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
 body {
   background: fixed center url(images/background.gif);
   background-size: cover;
+  color: #999;
 }
 
 .wrapper {
@@ -66,12 +72,13 @@ body {
   padding: 30px;
   background-repeat: no-repeat;
   background-position: right 40px center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-.contents:nth-child(1) {
+.information {
   background-image: url(images/icon-information.png);
 }
-.contents:nth-child(2) {
+.skills {
   background-image: url(images/icon-skills.png);
 }
 
@@ -80,6 +87,34 @@ body {
   margin-bottom: 20px;
 }
 
+.list li {
+  border-left: 5px solid #eaeaea;
+  padding-left: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.list li:hover {
+  border-color: pink;
+  color: pink;
+}
+
 .footer {
-  background-color: gold;
+  color: #ddd;
+  background-color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.icon {
+  display: inline-block;
+  border: 1px solid #ddd;
+  padding: 0.4em 1em;
+  border-radius: 40px;
+  transition: all 0.4s;
+}
+
+.icon:hover {
+  border-color: black;
+  color: black;
 }
